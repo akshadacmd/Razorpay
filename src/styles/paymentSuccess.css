@@ -1,0 +1,27 @@
+.payment-success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.payment-success-card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 500px;
+}
+
+.payment-success-card h1 {
+  color: #4caf50;
+  font-size: 2.5rem;
+}
+
+.payment-success-reference {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+}
