@@ -6,12 +6,12 @@ const Products = () => {
   const checkoutHandler = async (amount) => {
     const {
       data: { key },
-    } =await axios.get("http://localhost:8000/api/v1/getKey");
+    } =await axios.get("https://discordant-unspliced-sabra.ngrok-free.dev/api/v1/getkey");
 
 
     const {
       data: { order },
-    } = await axios.post("http://localhost:8000/api/v1/payment/process", { amount });
+    } = await axios.post("https://discordant-unspliced-sabra.ngrok-free.dev/api/v1/payment/process", { amount });
     const options = {
       key,
       amount: order.amount,
